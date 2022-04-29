@@ -1,0 +1,18 @@
+body{
+    background-color: gainsboro;
+}
+
+hr{
+    width: 80%;
+}
+
+.col{
+    background-color: rgb(235, 235, 235);
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 1px solid black;
+}
+
+.colContent{
+    background-color: white;
+}
