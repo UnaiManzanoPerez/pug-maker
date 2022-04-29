@@ -5,6 +5,12 @@ body{
 
 hr{
     width: 70%;
+    opacity: 1;
+    background-color: #f99e1a;
+    border-radius: 2px;
+}
+hr:not([size]) {
+    height: 4px;
 }
 
 .col{
@@ -21,4 +27,18 @@ hr{
 
 input{
     margin: 10px;
+}
+
+button{
+    border-radius: 5px;
+    border: 1px black solid;
+}
+
+#makeTeamButton{
+    border-radius: 5px;
+}
+
+.icon{
+    width: 32px;
+    height: 32px;
 }
