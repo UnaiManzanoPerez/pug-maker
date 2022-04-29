@@ -68,46 +68,46 @@ function makeTeam() {
 
     let randomTank1A = tankArray[Math.floor(Math.random() * tankArray.length)]
     divTeam1.innerHTML+=randomTank1A + "<br>"
-    tankArray.splice(randomTank1A, 1)
+    tankArray.splice(randomTank1A)
 
     let randomDPS1A = dpsArray[Math.floor(Math.random() * dpsArray.length)]
     divTeam1.innerHTML+=randomDPS1A + "<br>"
-    dpsArray.splice(randomDPS1A, 1)
+    dpsArray.splice(randomDPS1A)
 
     let randomDPS2A = dpsArray[Math.floor(Math.random() * dpsArray.length)]
     divTeam1.innerHTML+=randomDPS2A + "<br>"
-    dpsArray.splice(randomDPS2A, 1)
+    dpsArray.splice(randomDPS2A)
 
     let randomSupport1A = supportArray[Math.floor(Math.random() * supportArray.length)]
     divTeam1.innerHTML+=randomSupport1A + "<br>"
-    supportArray.splice(randomSupport1A, 1)
+    supportArray.splice(randomSupport1A)
 
     let randomSupport2A = supportArray[Math.floor(Math.random() * supportArray.length)]
     divTeam1.innerHTML+=randomSupport2A + "<br>"
-    supportArray.splice(randomSupport2A, 1)
+    supportArray.splice(randomSupport2A)
 
     // TEAM 2
     let divTeam2 = document.getElementById("team2")
 
     let randomTank1B = tankArray[Math.floor(Math.random() * tankArray.length)]
     divTeam2.innerHTML+=randomTank1B + "<br>"
-    tankArray.splice(randomTank1B, 1)
+    tankArray.splice(randomTank1B)
 
     let randomDPS1B = dpsArray[Math.floor(Math.random() * dpsArray.length)]
     divTeam2.innerHTML+=randomDPS1B + "<br>"
-    dpsArray.splice(randomDPS1B, 1)
+    dpsArray.splice(randomDPS1B)
 
     let randomDPS2B = dpsArray[Math.floor(Math.random() * dpsArray.length)]
     divTeam2.innerHTML+=randomDPS2B + "<br>"
-    dpsArray.splice(randomDPS2B, 1)
+    dpsArray.splice(randomDPS2B)
 
     let randomSupport1B = supportArray[Math.floor(Math.random() * supportArray.length)]
     divTeam2.innerHTML+=randomSupport1B + "<br>"
-    supportArray.splice(randomSupport1B, 1)
+    supportArray.splice(randomSupport1B)
 
     let randomSupport2B = supportArray[Math.floor(Math.random() * supportArray.length)]
     divTeam2.innerHTML+=randomSupport2B + "<br>"
-    supportArray.splice(randomSupport2B, 1)
+    supportArray.splice(randomSupport2B)
 }
 
 
