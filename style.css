@@ -1,9 +1,10 @@
 body{
     background-color: gainsboro;
+    font-family: 'Montserrat', sans-serif;
 }
 
 hr{
-    width: 80%;
+    width: 70%;
 }
 
 .col{
@@ -11,8 +12,13 @@ hr{
     margin-left: 10px;
     margin-right: 10px;
     border: 1px solid black;
+    border-radius: 4px;
 }
 
 .colContent{
-    background-color: white;
+    background-color: wheat;
+}
+
+input{
+    margin: 10px;
 }

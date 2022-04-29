@@ -9,37 +9,33 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 
 <body>
     <center>
-        <h1>Pug Maker</h1>
-        <hr>      
+        <br>
+        <h1>Pug Maker de Saker xd</h1>
+        <hr>
 
         <div class="container">
             <div class="row">
                 <!--TANKS-->
                 <div class="col">
-
                     <input type="text" id="inputTank">
-
                     <button onclick="addTank()">Add</button>
                 </div>
 
                 <!--DPS-->
                 <div class="col">
-
                     <input type="text" id="inputDPS">
-
                     <button onclick="addDPS()">Add</button>
                 </div>
 
                 <!--SUPPORTS-->
                 <div class="col">
-
                     <input type="text" id="inputSupport">
-
                     <button onclick="addSupport()">Add</button>
                 </div>
             </div>
@@ -51,6 +47,7 @@
                     <div class="colContent">
                         <div id="tankList"></div>
                     </div>
+                    <br>
                 </div>
                 <!--DPS-->
                 <div class="col">
@@ -58,6 +55,7 @@
                     <div class="colContent">
                         <div id="dpsList"></div>
                     </div>
+                    <br>
                 </div>
 
                 <!--SUPPORTS-->
@@ -65,6 +63,27 @@
                     <h2>Support</h2>
                     <div class="colContent">
                         <div id="supportList"></div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+
+            <br><br>
+            <button onclick="makeTeam()"  id="makeTeamButton">Make team</button>
+            <br><br>
+
+            <div class="row">
+                <div class="col">
+                    <h2>Team 1</h2>
+                    <div class="colContent">
+                        <div id="team1"></div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <h2>Team 2</h2>
+                    <div class="colContent">
+                        <div id="team2"></div>
                     </div>
                 </div>
             </div>
