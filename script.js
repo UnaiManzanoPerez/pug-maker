@@ -7,50 +7,55 @@ let okDPS = false;
 let okSupport = false;
 
 function addTank() {
-    let tankToAdd = document.getElementById("inputTank").value
-    tankArray.push(tankToAdd)
-
-    let tankList = document.getElementById("tankList")
-    tankList.innerHTML += tankToAdd + "<br>"
-
-    document.getElementById("inputTank").value = ""
-    enoughPlayers()
+    if (document.getElementById("inputTank").value){
+        let tankToAdd = document.getElementById("inputTank").value
+        tankArray.push(tankToAdd)
+        
+        let tankList = document.getElementById("tankList")
+        tankList.innerHTML += tankToAdd + "<br>"
+        
+        document.getElementById("inputTank").value = ""
+        enoughPlayers()
+    }else{
+        return
+    }
 }
 
 function addDPS() {
-    let dpsToAdd = document.getElementById("inputDPS").value
-    dpsArray.push(dpsToAdd)
-
-    let dpsList = document.getElementById("dpsList")
-    dpsList.innerHTML += dpsToAdd + "<br>"
-
-    document.getElementById("inputDPS").value = ""
-    enoughPlayers()
+    if (document.getElementById("inputDPS").value){
+        let dpsToAdd = document.getElementById("inputDPS").value
+        dpsArray.push(dpsToAdd)
+        
+        let dpsList = document.getElementById("dpsList")
+        dpsList.innerHTML += dpsToAdd + "<br>"
+        
+        document.getElementById("inputDPS").value = ""
+        enoughPlayers()
+    }else{
+        return
+    }
 }
 
 function addSupport() {
-    let supportToAdd = document.getElementById("inputSupport").value
-    supportArray.push(supportToAdd)
+    if (document.getElementById("inputSupport").value){
+        let supportToAdd = document.getElementById("inputSupport").value
+        supportArray.push(supportToAdd)
 
-    let supportList = document.getElementById("supportList")
-    supportList.innerHTML += supportToAdd + "<br>"
+        let supportList = document.getElementById("supportList")
+        supportList.innerHTML += supportToAdd + "<br>"
+    
+        document.getElementById("inputSupport").value = ""
+        enoughPlayers()
+    }else{
+        return
+    }
 
-    document.getElementById("inputSupport").value = ""
-    enoughPlayers()
 }
 
 function enoughPlayers(){
-    if (tankArray.length >= 2) {
-        okTank = true;
-    }
-
-    if (dpsArray.length >= 4) {
-        okDPS = true;
-    }
-
-    if (supportArray.length >= 4) {
-        okSupport = true;
-    }
+    if (tankArray.length >= 2) {okTank = true;}
+    if (dpsArray.length >= 4) {okDPS = true;}
+    if (supportArray.length >= 4) {okSupport = true;}
 
     if (okTank == true && okDPS == true && okSupport == true) {
         document.getElementById("makeTeamButton").disabled = false
