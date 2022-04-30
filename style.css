@@ -6,7 +6,7 @@ body{
 hr{
     width: 70%;
     opacity: 1;
-    background-color: #f99e1a;
+    background-color: #218ffe;
     border-radius: 2px;
 }
 hr:not([size]) {

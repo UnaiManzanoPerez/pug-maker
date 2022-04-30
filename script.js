@@ -88,7 +88,7 @@ function makeTeam() {
 
     rand = Math.floor(Math.random() * supportArray.length)
     let randomSupport2A = supportArray[rand]
-    divTeam1.innerHTML+=randomSupport2A + "<br>"
+    divTeam1.innerHTML+=randomSupport2A + "<br><hr>"
     supportArray.splice(rand,1)
     //////////////////////////////////////////
 
@@ -119,9 +119,32 @@ function makeTeam() {
 
     rand = Math.floor(Math.random() * supportArray.length)
     let randomSupport2B = supportArray[rand]
-    divTeam2.innerHTML+=randomSupport2B + "<br>"
+    divTeam2.innerHTML+=randomSupport2B + "<br><hr>"
     supportArray.splice(rand,1)
-    
+
+    removeSelectedPlayers()
+}
+
+function removeSelectedPlayers(){
+    console.log(tankArray)
+    console.log(dpsArray)
+    console.log(supportArray)
+
+    tankList.innerHTML = ""
+    dpsList.innerHTML = ""
+    supportList.innerHTML = ""
+
+    for (let i = 0; i < tankArray.length; i++) {
+        tankList.innerHTML += tankArray[i]+"<br>"
+    }
+
+    for (let i = 0; i < dpsArray.length; i++) {
+        dpsList.innerHTML += dpsArray[i]+"<br>"
+    }
+
+    for (let i = 0; i < supportArray.length; i++) {
+        supportList.innerHTML += supportArray[i]+"<br>"
+    }
 }
 
 
