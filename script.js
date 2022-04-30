@@ -66,48 +66,62 @@ function makeTeam() {
     // TEAM 1
     let divTeam1 = document.getElementById("team1")
 
-    let randomTank1A = tankArray[Math.floor(Math.random() * tankArray.length)]
+    let rand = Math.floor(Math.random() * tankArray.length)
+    let randomTank1A = tankArray[rand]
     divTeam1.innerHTML+=randomTank1A + "<br>"
-    tankArray.splice(randomTank1A)
+    tankArray.splice(rand,1)
 
-    let randomDPS1A = dpsArray[Math.floor(Math.random() * dpsArray.length)]
+    rand = Math.floor(Math.random() * dpsArray.length)
+    let randomDPS1A = dpsArray[rand]
     divTeam1.innerHTML+=randomDPS1A + "<br>"
-    dpsArray.splice(randomDPS1A)
+    dpsArray.splice(rand,1)
 
-    let randomDPS2A = dpsArray[Math.floor(Math.random() * dpsArray.length)]
+    rand = Math.floor(Math.random() * dpsArray.length)
+    let randomDPS2A = dpsArray[rand]
     divTeam1.innerHTML+=randomDPS2A + "<br>"
-    dpsArray.splice(randomDPS2A)
+    dpsArray.splice(rand,1)
 
-    let randomSupport1A = supportArray[Math.floor(Math.random() * supportArray.length)]
+    rand = Math.floor(Math.random() * supportArray.length)
+    let randomSupport1A = supportArray[rand]
     divTeam1.innerHTML+=randomSupport1A + "<br>"
-    supportArray.splice(randomSupport1A)
+    supportArray.splice(rand,1)
 
-    let randomSupport2A = supportArray[Math.floor(Math.random() * supportArray.length)]
+    rand = Math.floor(Math.random() * supportArray.length)
+    let randomSupport2A = supportArray[rand]
     divTeam1.innerHTML+=randomSupport2A + "<br>"
-    supportArray.splice(randomSupport2A)
+    supportArray.splice(rand,1)
+    //////////////////////////////////////////
 
     // TEAM 2
+    
+    
     let divTeam2 = document.getElementById("team2")
 
-    let randomTank1B = tankArray[Math.floor(Math.random() * tankArray.length)]
+    rand = Math.floor(Math.random() * tankArray.length)
+    let randomTank1B = tankArray[rand]
     divTeam2.innerHTML+=randomTank1B + "<br>"
-    tankArray.splice(randomTank1B)
+    tankArray.splice(rand,1)
 
-    let randomDPS1B = dpsArray[Math.floor(Math.random() * dpsArray.length)]
+    rand = Math.floor(Math.random() * dpsArray.length)
+    let randomDPS1B = dpsArray[rand]
     divTeam2.innerHTML+=randomDPS1B + "<br>"
-    dpsArray.splice(randomDPS1B)
+    dpsArray.splice(rand,1)
 
-    let randomDPS2B = dpsArray[Math.floor(Math.random() * dpsArray.length)]
+    rand = Math.floor(Math.random() * dpsArray.length)
+    let randomDPS2B = dpsArray[rand]
     divTeam2.innerHTML+=randomDPS2B + "<br>"
-    dpsArray.splice(randomDPS2B)
+    dpsArray.splice(rand,1)
 
-    let randomSupport1B = supportArray[Math.floor(Math.random() * supportArray.length)]
+    rand = Math.floor(Math.random() * supportArray.length)
+    let randomSupport1B = supportArray[rand]
     divTeam2.innerHTML+=randomSupport1B + "<br>"
-    supportArray.splice(randomSupport1B)
+    supportArray.splice(rand,1)
 
-    let randomSupport2B = supportArray[Math.floor(Math.random() * supportArray.length)]
+    rand = Math.floor(Math.random() * supportArray.length)
+    let randomSupport2B = supportArray[rand]
     divTeam2.innerHTML+=randomSupport2B + "<br>"
-    supportArray.splice(randomSupport2B)
+    supportArray.splice(rand,1)
+    
 }
 
 
