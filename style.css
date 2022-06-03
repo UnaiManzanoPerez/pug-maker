@@ -42,3 +42,13 @@ button{
     width: 32px;
     height: 32px;
 }
+
+.centrar{
+    text-align: center;
+}
+
+tr:nth-child(even) {background: rgb(187, 187, 187)}
+tr:nth-child(odd) {background: #ffcf87}
+.tablaTitulos{
+    background-color: #218ffe;
+}
