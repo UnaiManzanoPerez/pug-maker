@@ -170,8 +170,8 @@ function darkMode() {
 var players = ["Saker-21640", "YZNSA2-2421", "Chasetorch-2588", "Jarew-2385", "ADE-22814"];
 
 let player = "";
-const saltoLinea = "<br>"
-const role = ["Tank", "DPS", "Support"]
+const saltoLinea = "<br>";
+const role = ["Tank", "DPS", "Support"];
 
 const divInfo = document.getElementById("data");
 
