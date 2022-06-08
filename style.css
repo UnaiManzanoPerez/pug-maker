@@ -52,3 +52,15 @@ tr:nth-child(odd) {background: #ffcf87}
 .tablaTitulos{
     background-color: #218ffe;
 }
+
+.darkmode:hover{
+    background-color: #218ffe;
+}
+
+.sensiCol{
+    border: 0px ;
+}
+
+.sensiRow{
+    padding: 2px;
+}

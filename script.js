@@ -166,6 +166,7 @@ function darkMode() {
     head.appendChild(style);
 }
 
+
 //https://ow-api.com/v1/stats/PC/EU/Saker-21640/profile
 var players = ["Saker-21640", "YZNSA2-2421", "Chasetorch-2588", "Jarew-2385", "ADE-22814"];
 
@@ -183,7 +184,7 @@ let titulos = "<table class='tablaDatos'>\n" +
     "<td><b>SR</b></td>\n" +
     "</tr>"
 
-let datos = ""
+let datos = "";
 
 for (let i = 0; i < players.length; i++) {
     const request = async () => {
@@ -202,3 +203,16 @@ for (let i = 0; i < players.length; i++) {
     request();
 }
 
+
+
+// SENS CALCULATOR
+const sensXdpiCalc = 0.003;
+
+function calculateSens(){
+    var sens = document.getElementById("sens").value
+    var dpi = document.getElementById("dpi").value
+    console.log(sens*dpi)
+    var sensInCm = (sens*dpi)*sensXdpiCalc;
+    console.log(sensInCm)
+
+}

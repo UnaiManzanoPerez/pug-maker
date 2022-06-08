@@ -19,7 +19,7 @@
         <br>
         <hr>
         <h1>Pug Maker de Saker</h1>
-        <button onclick="darkMode()">
+        <button onclick="darkMode()" class="darkmode">
             <img src="assets/nightmode.png" class="icon">
         </button>
         <hr>
@@ -99,6 +99,7 @@
 
         </div>
         <br>
+        
         <hr>
         <h1>Leaderboard</h1>
         <hr>
@@ -106,6 +107,29 @@
         <div id="containar">
             <div id="data"></div>
         </div>
+  
+
+        <hr>
+        <h1>Sensitivity Calculator</h1>
+        <hr>
+
+        <div class="container">
+            <div class="col">
+                <div class="row align-items-start sensiRow">
+                    <div class="col sensiCol">
+                        Sens:
+                        <input type="number" id="sens">
+                        <br>
+                    </div>
+                    <div class="col sensiCol">
+                        DPI:
+                        <input type="number" id="dpi">
+                    </div>
+                </div>
+                <button onclick="calculateSens()">Calculate</button>
+                <br><br>
+                <div id="sensResult"></div>
+            </div>
     </center>
 </body>
 
